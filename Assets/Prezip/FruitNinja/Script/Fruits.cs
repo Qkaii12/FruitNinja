@@ -33,9 +33,12 @@ public class Fruits : MonoBehaviour
         Destroy(instantiatedJuice, 5);
     }
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
-        InstantiateSlicedFruit();
-        Destroy(gameObject);
+        if (other.tag == "Blade") 
+        { 
+            Destroy(gameObject);
+            InstantiateSlicedFruit();
+        }
     }
 }
