@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     int score;
+    int lives;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI livesText;
     void Start()
     {
         score = 0;
@@ -16,5 +18,10 @@ public class GameManager : MonoBehaviour
     {
         score += scorePointsToAdd;
         scoreText.text = score.ToString();
+    }
+    public void UpdateLives() 
+    {
+        lives--;
+        livesText.text = "Lives: " + lives;
     }
 }

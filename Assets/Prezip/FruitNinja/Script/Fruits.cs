@@ -44,5 +44,9 @@ public class Fruits : MonoBehaviour
             Destroy(gameObject);
             InstantiateSlicedFruit();
         }
+        if(other.tag == "BottomTrigger")
+        {
+            gm.UpdateLives();
+        }
     }
 }
