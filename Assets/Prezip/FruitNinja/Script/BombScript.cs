@@ -21,6 +21,7 @@ public class BombScript : MonoBehaviour
         {
             Destroy(gameObject);
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
 }
