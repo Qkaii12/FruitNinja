@@ -157,6 +157,8 @@ MonoBehaviour:
   livesText: {fileID: 983657514}
   gameOverText: {fileID: 454180963}
   restartButton: {fileID: 766435839}
+  tablePoint: {fileID: 2027571827}
+  rank: {fileID: 1788155732}
   gameIsOver: 0
 --- !u!4 &1821653
 Transform:
@@ -966,7 +968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &766435838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1460,7 +1462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1788155731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1669,7 +1671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2027571826
 RectTransform:
   m_ObjectHideFlags: 0
