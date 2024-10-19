@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI livesText;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
+    public Image tablePoint;
+    public Image rank;
     public bool gameIsOver;
     void Start()
     {
@@ -41,8 +43,10 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameIsOver = true;
-        gameOverText.gameObject.SetActive(true);
+        //gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
+        tablePoint.gameObject.SetActive(true);
+        rank.gameObject.SetActive(true);
     }
     public void RestartTheGame()
     {
